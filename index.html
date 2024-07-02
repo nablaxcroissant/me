@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>draw3d</title>
-    <link rel="icon" href="favicon.ico">
-    <style>
-        canvas {
-            background-color: black;
-        }
-    </style>
+    <title>Carson Lauer</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <header>
+        <nav>
+            <h1>Carson Lauer</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body id="wasm-example">
-  <script type="module">
-        import init from "./pkg/draw3d.js";
-        init().then(() => {
-            console.log("WASM Loaded");
-        });
-  </script>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Studying physics and computer science at Stanford University.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <ul>
+                <li><a href="mailto:lauercarson@gmail.com">lauercarson@gmail.com</a></li>
+                <li><a href="mailto:clauer@stanford.edu">clauer@stanford.edu</a></li>
+                <li><a href="https://www.linkedin.com/in/carson-lauer">linkedin</a></li>
+                <li><a href="https://github.com/nablaxcroissant">github</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Carson Lauer. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
-
 </html>
- 
