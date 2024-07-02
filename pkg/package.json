@@ -1,0 +1,14 @@
+{
+  "name": "draw3d",
+  "version": "0.1.0",
+  "files": [
+    "draw3d_bg.wasm",
+    "draw3d.js",
+    "draw3d.d.ts"
+  ],
+  "module": "draw3d.js",
+  "types": "draw3d.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
