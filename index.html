@@ -3,42 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cacabe920f.js" crossorigin="anonymous"></script>
     <title>Carson Lauer</title>
     <link rel="stylesheet" href="css/styles.css">
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@v0.167.1/build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="js/script.js"></script>
+
 </head>
 <body>
-    <header>
+    <!--
+    <div class="sidebar">
         <nav>
-            <h1>Carson Lauer</h1>
+        <div class="internal-padding">
+            <div id="home-side">
+                <a href="" onclick="return false">
+                    <img id="flame" src="fractal.jpeg" alt="Fractal Flame Image Photo">
+                    <h2> Carson Lauer</h2>
+                </a>
+            </div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li></li>
+                <li><a id="projects-side" href="" onclick="return false"><h2>Projects</h2></a></li>
+                <li><h2><a href="">Contact</a></h2></li>
+
             </ul>
+        </div>
         </nav>
-    </header>
+    </div>
+    <div id="main-content"></div>
 
+    -->
+
+    <div id="hero">
+        <div id="hero-text">
+            <h1>Carson Lauer</h1>
+            <h3>
+                Physics & Computer Science @ Stanford University
+            </h3>
+        </div>
+    </div>
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Studying physics and computer science at Stanford University.</p>
-        </section>
+        <div class="flex-container">
+            <div id="nav" style="flex-grow: 2">
+                <ul>
+                    <li><a href="#projects"><h2>Projects</h2></a></li>
+                    <li><a href="#writing"><h2>Writing</h2></a></li>
+                    <li><a href="#about"><h2>About</h2></a></li>
+                    <li><a href="#contact"><h2>Contact</h2></a></li>
+                </ul>
+            </div>
+            <div style="flex-grow: 1">
+                <svg class="diagonal-divider" width="100" height="800">
+                    <line x1="100%" y1="0" x2="0%" y2="100%" stroke="white" stroke-width="2" />
+                </svg>
+            </div>
+            <div id="atom-container" style="flex-grow: 4">
+                <canvas id="atoms"></canvas>
+            </div>
+        </div>
+        <div>
+            <svg id="horizontal-divider" width="1200" height="2">
+                <line x1="0%" y1="0" x2="100%" y2="0" stroke="white" stroke-width="2" />
+            </svg>
+        </div>
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <ul>
-                <li><a href="mailto:lauercarson@gmail.com">lauercarson@gmail.com</a></li>
-                <li><a href="mailto:clauer@stanford.edu">clauer@stanford.edu</a></li>
-                <li><a href="https://www.linkedin.com/in/carson-lauer">linkedin</a></li>
-                <li><a href="https://github.com/nablaxcroissant">github</a></li>
-            </ul>
-        </section>
+        <h2 id="projects">Projects</h2>
+        <div id="project-div" class="flex-container">
+            <div class="project-col">
+                <div class="project-item">
+                    <h3>Axion Dark Matter Experiment w/ Chao-Lin Kuo Group</h3>
+                    <p>Worked on metrology, tolerance testing, and cold readout for a dark matter detector at Stanford.</p>
+                </div>
+            </div>
+            <div class="project-col">
+                <div class="project-item">
+                    <h3>Lorenz Attractor & Other Chaotic Attractors</h3>
+                    <p>Graphics and Simulations done in the browser.</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <svg id="horizontal-divider" width="1200" height="2">
+                <line x1="0%" y1="0" x2="100%" y2="0" stroke="white" stroke-width="2" />
+            </svg>
+        </div>
+
+        <div id="about-contact" class="flex-container">
+            <div id="about" style="flex: 40%">
+                <h2>About</h2>
+                <p>
+                    I am a student at Stanford University interested in the intersection of physics and computer science, 
+                    and I am currently working on a dark matter experiment with the Chao-Lin Kuo group. 
+                </p>
+                <p>
+                    I am planning to major in Engineering Physics.
+                </p>
+            </div>
+            <div style="flex: 10%">
+                <svg class="diagonal-divider" width="100" height="600">
+                    <line x1="100%" y1="10%" x2="0%" y2="100%" stroke="white" stroke-width="2" />
+                </svg>
+            </div>
+            <div id="contact" style="flex: 50%;">
+                <h2>Contact</h2>
+                <b>
+                <ul>
+                    <li><a href="mailto:lauercarson@gmail.com">lauercarson@gmail.com</a></li>
+                    <li><a href="mailto:clauer@stanford.edu">clauer@stanford.edu</a></li>
+                    <li><a href="https://www.linkedin.com/in/carson-lauer">linkedin</a></li>
+                    <li><a href="https://github.com/nablaxcroissant">
+                        <img src="github-mark-white.png" alt="github logo" width="40px">
+                        <span>github</span>
+                    </a></li>
+                </ul>
+                </b>
+            </div>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Carson Lauer. All rights reserved.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
