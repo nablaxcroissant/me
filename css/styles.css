@@ -83,7 +83,7 @@ ul {
 
 main {
     padding-top: 2em;
-    width: 1600px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -132,10 +132,28 @@ canvas {
 
 .project-item {
     padding: 1em;
-    border-radius: 15px;
+    border-radius: 5px;
     border: #fff 1px solid;
 }
 
 #about-contact {
     margin-bottom: 4em;
+}
+
+#contact li{
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+#contact img {
+    width: 40px;
+    vertical-align: -30%;
+}
+
+#profile-pic {
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    border: #fff 1px solid;
 }

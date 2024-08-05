@@ -43,7 +43,7 @@ export function atoms() {
             let dx = this.x - particle.x;
             let dy = this.y - particle.y;
             let d = Math.sqrt(dx * dx + dy * dy);
-            let f = 0.002*(Math.pow(40, 12)/Math.pow(d, 12) - Math.pow(40, 6)/ Math.pow(d, 6));
+            let f = 0.002*(Math.pow(40, 13)/Math.pow(d, 13) - Math.pow(40, 7)/ Math.pow(d, 7));
             if (d > 120) {
                 f-= 0.001*40*40/Math.pow(d, 2);
             }
@@ -62,7 +62,7 @@ export function atoms() {
             let dx = this.x - mouse_x;
             let dy = this.y - mouse_y;
             let d = Math.sqrt(dx * dx + dy * dy);
-            let f = Math.min(0.005*(Math.pow(40, 12)/Math.pow(d, 12) - Math.pow(40, 6)/ Math.pow(d, 6)), 0.03);
+            let f = Math.min(0.005*(Math.pow(40, 13)/Math.pow(d, 13) - Math.pow(40, 7)/ Math.pow(d, 7)), 0.03);
             let fx = f * dx / d;
             let fy = f * dy / d;
 
