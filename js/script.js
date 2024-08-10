@@ -4,16 +4,8 @@
 
 // import { lattices } from "./lattices.js";
 import {atoms} from "./atoms.js";
-import {bullets} from "./bullets.js";
-import {lorenz} from "./lorenz.js";
-
-//lattices();
 
 atoms();
-
-//bullets();
-
-//lorenz();
 
 /*
 document.getElementById("projects-side").addEventListener("click", async () => {

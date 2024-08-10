@@ -1,8 +1,8 @@
 export function atoms() {
     window.requestAnimationFrame(draw);
     const canvas = document.getElementById("atoms");
-    canvas.setAttribute("width", 800);
-    canvas.setAttribute("height", 800);
+    canvas.setAttribute("width", 600);
+    canvas.setAttribute("height", 600);
     const ctx = canvas.getContext("2d");
 
 

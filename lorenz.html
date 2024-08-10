@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Lauer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.167.1/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.1/examples/jsm/"
+        }
+    }
+    </script>
+    <script type="module" src="js/lorenz.js"></script>
+</head>
+<body>
+    <main>
+        <h2>Lorenz Attractor</h2>
+        <div>
+            <canvas id="lorenz"></canvas>
+        </div>
+        <p>
+            This is the lorenz attractor. It is a differential equation that describes a chaotic system. I coded it using THREE.js. 
+        </p>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Carson Lauer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

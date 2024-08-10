@@ -7,7 +7,6 @@ body {
     color: #fff;
     background-color: #000;
     height: 100%;
-    font-size: 20px;
 }
 
 p {
@@ -15,15 +14,9 @@ p {
 }
 
 #hero {
-    padding-top: 4em;
-    margin-bottom: 4em;
     justify-content: center;
     align-items: center;
     text-align: center;   
-}
-
-h2 {
-    font-size: 35px;
 }
 
 a {
@@ -40,7 +33,7 @@ a:link {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 2px;
 }
 
 .sidebar {
@@ -62,7 +55,7 @@ nav {
 #horizontal-divider {
     width: 100%;
     margin: auto;
-    margin-top: 12em;
+    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -83,7 +76,7 @@ ul {
 
 main {
     padding-top: 2em;
-    width: 1200px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -123,7 +116,6 @@ canvas {
 #project-div {
     display: flex;
     gap: 4em;
-    padding: 2em;
 }
 
 .project-col {
